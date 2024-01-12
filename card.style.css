@@ -1,0 +1,33 @@
+body {
+    background-image:repeating-linear-gradient(135deg, 
+    lightblue, hsl(209, 100%, 45%) 5%, rgb(159, 140, 210) 15%);
+}
+h1 {
+    display:flex ;
+    background-color: aqua;
+    justify-content: center;
+}
+.review-card{
+	display: inline-flex;
+	height: 300px;
+	width: 250px;
+	background-color: lightcoral;
+	box-shadow: 10px 5px 3px black;
+}
+
+.invisibility{
+	color: rgba(255, 255, 255, 0.0);
+
+}
+.invisibility:hover{
+	color: rgba(255, 255, 255, 1.0);
+}
+
+.review-card:nth-child(even){
+	background-color: lightgreen;
+} 
+.review-card:hover{
+	transition: 1s;
+	transform: scale3d(1.25, 1.25, 2.0) translate3d(0px, 25px, 25px) rotate3d(1, 1, 0, 15deg);
+	z-index: 300;
+}
